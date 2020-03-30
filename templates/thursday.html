@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+ {{ title }}
+{% endblock %}
+    
+{% block content %}
+<h1>Days of the week</h1>
+
+<ul>
+{% for day in week_days %}
+    {% if day == "Saturday" %}
+    <h4>Weeeknd</h4>
+    {% else %}
+    <h4>{{ day }}</h4>
+    {% endif %}
+
+{% endfor %}
+</ul>
+{% endblock %}
+
+
+
+
+
+
+
+
